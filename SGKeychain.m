@@ -63,7 +63,7 @@ static NSString * const SGKeychainErrorDomain = @"com.secondgear.sgkeychain";
                                                                         username, nil];
     
     NSMutableDictionary *attributesQuery = [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
-#if !TARGET_IPHONE_SIMULATOR
+#if !TARGET_IPHONE_SIMULATOR && !__MAC_OS_X_VERSION_MIN_REQUIRED
     if (accessGroup != nil)
     {
         [attributesQuery setObject:accessGroup forKey:(__bridge id)kSecAttrAccessGroup];
@@ -188,7 +188,7 @@ static NSString * const SGKeychainErrorDomain = @"com.secondgear.sgkeychain";
                                                                                                 nil];
             
             NSMutableDictionary *query = [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
-#if !TARGET_IPHONE_SIMULATOR        
+#if !TARGET_IPHONE_SIMULATOR && !__MAC_OS_X_VERSION_MIN_REQUIRED
             if (accessGroup != nil)
             {
                 [query setObject:accessGroup forKey:(__bridge id)kSecAttrAccessGroup];
@@ -215,7 +215,7 @@ static NSString * const SGKeychainErrorDomain = @"com.secondgear.sgkeychain";
                                                                                     passwordData, nil];
         
         NSMutableDictionary *query = [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
-#if !TARGET_IPHONE_SIMULATOR
+#if !TARGET_IPHONE_SIMULATOR && !__MAC_OS_X_VERSION_MIN_REQUIRED
         if (accessGroup != nil)
         {
             [query setObject:accessGroup forKey:(__bridge id)kSecAttrAccessGroup];
@@ -266,7 +266,7 @@ static NSString * const SGKeychainErrorDomain = @"com.secondgear.sgkeychain";
                         kCFBooleanTrue, nil];
     
     NSMutableDictionary *query = [NSMutableDictionary dictionaryWithObjects:objects forKeys:keys];
-#if !TARGET_IPHONE_SIMULATOR
+#if !TARGET_IPHONE_SIMULATOR && !__MAC_OS_X_VERSION_MIN_REQUIRED
     if (accessGroup != nil)
     {
         [query setObject:accessGroup forKey:(__bridge id)kSecAttrAccessGroup];
