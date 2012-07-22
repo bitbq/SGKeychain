@@ -50,8 +50,8 @@ static NSString * const SGKeychainErrorDomain = @"com.secondgear.sgkeychain";
         if (error != nil)
         {
             *error = [NSError errorWithDomain:SGKeychainErrorDomain code:SGKeychainRequiredValueNotPresentError userInfo:nil];
-            return nil;
         }
+        return nil;
     }
     
     NSArray *keys = [NSArray arrayWithObjects:(__bridge NSString *) kSecClass, 
