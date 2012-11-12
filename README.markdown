@@ -6,13 +6,13 @@ Created and maintained by [Justin Williams](http://www.secondgearsoftware.com)
 What is SGKeychain?
 -------------------------
 
-SGKeychain is a class for working with the keychain on iOS. It has the following features:
+SGKeychain is a class for working with the keychain on iOS and OS X. It has the following features:
 
  * Creating new keychain items
  * Fetching passwords from the keychain
  * Deleting items from your keychain
  * Supports keychain access groups for sharing a single keychain between multiple apps (not supported in the iPhone simulator)
- * Built for iOS 5 and above using automatic reference counting (ARC)
+ * Built for iOS 5/10.7 and above using automatic reference counting (ARC)
  * Unit tested
 
 What's in the box?
